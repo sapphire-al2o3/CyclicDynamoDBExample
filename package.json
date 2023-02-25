@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@cyclic.sh/dynamodb": "^0.0.33",
+    "dotenv": "^16.0.3"
+  }
+}
