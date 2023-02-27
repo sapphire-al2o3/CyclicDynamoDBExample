@@ -1,7 +1,7 @@
-const CyclicDB = require('@cyclic.sh/dynamodb');
 require('dotenv').config();
 console.log(process.env.CYCLIC_DB);
 console.log(process.env.AWS_ACCESS_KEY_ID);
+const CyclicDB = require('@cyclic.sh/dynamodb');
 const db = CyclicDB(process.env.CYCLIC_DB);
 
 async function run() {
@@ -13,8 +13,8 @@ async function run() {
         color:'orange'
     })
 
-    // // get an item at key "leo" from collection animals
-    // let item = await animals.get('leo');
-    // console.log(item);
+    // get an item at key "leo" from collection animals
+    let item = await animals.get('leo');
+    console.log(item);
 }
 run();
